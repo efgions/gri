@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <!-- Подключение статических файлов, если необходимо -->
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    <ul>
+        {% for service in services %}
+        <li>{{ service }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Контакты</h2>
+    <address>
+        Телефон: {{ contact.phone }}, Электронная почта: {{ contact.email }}
+    </address>
+</body>
+</html>
